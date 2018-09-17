@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func tellUserMore(){
+        let alert = UIAlertController(title:"More info",message:"你好，世界。",preferredStyle:.alert)
+        alert.addAction(UIAlertAction(title:"好的",style:.default,handler:nil))
+        self.present(alert,animated:true,completion: nil)
+    }
 
 
 }
