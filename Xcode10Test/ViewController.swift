@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tellUserMore(){
+        print("User clicked TellMeMore")
         let alert = UIAlertController(title:"More info",message:"你好，世界。",preferredStyle:.alert)
         alert.addAction(UIAlertAction(title:"好的",style:.default,handler:nil))
         self.present(alert,animated:true,completion: nil)
